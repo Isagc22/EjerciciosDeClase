@@ -2,22 +2,24 @@
 // (introducido por el usuario), teniendo en cuenta lo siguiente:
 // • Las llamadas de 5 minutos o menos tienen un coste de 10 BsF.
 // • Cada minuto adicional a partir de los 5 primeros cuesta 2 BsF. 
-
 import java.util.Scanner;
 
 public class Ejercicio13 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Cuanto tiempo duro la llamada: ");
-        int minuto = scanner.nextInt();
-
-        if(minuto <= 5){
-            System.err.println("Su llamada tienes un costo de: 10 BsF");
-        }else{
-            System.err.println("Su llamada se paso");
-        }
-
+        System.out.println("¿Cuánto tiempo duró la llamada en minutos?: ");
+        int minutos = scanner.nextInt();
+        
+        int costo = 10;
+        
+        if (minutos > 5) {
+            int minutosAdicionales = minutos - 5;  
+            costo += minutosAdicionales * 2;  
+        
+        System.out.println("El costo total de la llamada es: " + costo + " BsF");
+        
         scanner.close();
     }
+}
 }
