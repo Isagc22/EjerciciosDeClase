@@ -1,5 +1,4 @@
 // Calcular el mayor de tres números enteros introducidos por teclado. 
-package main;
 
 import java.util.Scanner;
 

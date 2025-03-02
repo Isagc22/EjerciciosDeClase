@@ -13,7 +13,7 @@
 
 import java.util.Scanner;
 
-public class DomingoDePascua {
+public class Ejercicio23 {
 
     // Función para calcular N (el día del mes de Pascua)
     public static int calcularDiaPascua(int año) {

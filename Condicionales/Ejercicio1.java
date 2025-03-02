@@ -1,4 +1,3 @@
-package main;
 
 //importar clases
 import java.util.Scanner;
